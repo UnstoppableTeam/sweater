@@ -37,5 +37,8 @@ public class Message {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
     private User author;
+    @Setter
+    @Getter
+    private String filename;
 
 }
